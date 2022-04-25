@@ -13,7 +13,6 @@ cycler==0.10.0
 cymem==2.0.5
 ekphrasis==0.5.1
 emoji==1.2.0
-fasttext==0.8.2
 filelock==3.0.12
 flatbuffers==1.12
 ftfy==6.0.3
