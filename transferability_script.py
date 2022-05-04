@@ -1,8 +1,14 @@
 import argparse
 import warnings
+
+from transformers.utils import logging
+logging.set_verbosity_error()
+logging.disable_progress_bar()
+
 from nlp.transferability.bert_transferability import evaluate_bert
 from nlp.transferability.lstm_transferability import evaluate_LSTM
 from nlp.transferability.fasttext_transferability import evaluate_fasttext
+
 
 # Example of running an experiment:
 # python3 transferability_script.py --model=bert --target-domain="ALM" --fine-tune=True --target-frac=0.9
